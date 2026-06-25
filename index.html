@@ -51,21 +51,19 @@
             text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
         }
         
-        /* UPDATED: Added a dark frosted background and drop shadow to make text pop */
         .research-focus {
-            max-width: 650px;
+            max-width: 750px;
             margin: 20px auto 30px auto;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             line-height: 1.6;
             color: #ffffff;
             background: rgba(0, 0, 0, 0.55);
-            padding: 15px 25px;
+            padding: 20px 30px;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
             text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
         }
 
-        /* UPDATED: Made the link bolder and added a shadow */
         .scroll-down {
             margin-top: 10px;
             font-size: 1.2rem;
@@ -82,7 +80,7 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
             padding: 40px 20px;
         }
@@ -101,6 +99,12 @@
             border-radius: 8px;
             margin-bottom: 20px;
             border-left: 3px solid #6b6bcf;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(5px);
         }
 
         ul {
@@ -134,9 +138,11 @@
         <h1>Sandra Jaison</h1>
         <p class="title">Astrophysicist | PhD Researcher</p>
         
-        <p class="research-focus">Focusing on extra-galactic astrophysics, BH-galaxy co-evolution, SED modeling, and the effect of central AGNs on host galaxies.</p>
+        <div class="research-focus">
+            <strong>Research Interests:</strong> Extra galactic astrophysics, BH-galaxy co-evolution, SED modeling of compact objects, Galaxy formation and evolution, star formation in galaxies, effect of central AGNs on host galaxies, radio emission from quasars, Multi-wavelength AGN Surveys.
+        </div>
         
-        <a href="#qualifications" class="scroll-down">Explore My Work<br>▼</a>
+        <a href="#qualifications" class="scroll-down">Explore My Background<br>▼</a>
     </header>
 
     <div class="container" id="qualifications">
@@ -144,38 +150,72 @@
         <ul>
             <li><strong>PhD in Astrophysics</strong> (Doutoranda) — <em>Universidade Federal do Rio Grande do Sul [UFRGS], Brazil (Aug 2025 - Present)</em></li>
             <li><strong>Masters in Physics (Astrophysics)</strong> — <em>Presidency University, Kolkata, India (Nov 2021 - Aug 2023)</em></li>
-            <li><strong>Bachelor of Science in Physics</strong> — <em>St Josephs College Devagiri, University of Calicut, India (Sep 2018 - Apr 2021)</em></li>
+            <li><strong>Bachelor of Science in Physics</strong> — <em>St Josephs College Devagiri, University of Calicut, Kerala, India (Sep 2018 - Apr 2021)</em></li>
         </ul>
     </div>
 
     <div class="container" id="publications">
         <h2>Publications</h2>
+
+        <div class="card">
+            <h3>Hunting for Off-Nuclear AGN in MaNGA: Spatially resolved selection using MEGACUBES</h3>
+            <p><em>Sandra Jaison, Rogério Riffel, Dominika Wylezalek</em></p>
+            <p><strong>Status:</strong> In preparation</p>
+        </div>
+
+        <div class="card">
+            <h3>Blowing star formation away in AGN hosts (BAH) -- V: The Feeding-Feedback Cycle in local AGNs as reveled by their stellar populations</h3>
+            <p><em>Rogério Riffel, Rogemar A. Riffel, Gabriel L. Souza-Oliveira, Nadia L. Zakamska, Thaisa Storchi-Bergmann, Marina Bianchin, Lais Nery Marinho, Sandra Jaison, Suresh Parekh, Maitê S. Z. de Mellos, José Henrique Costa-Souza, Rafael S. de Souza</em></p>
+            <a href="https://arxiv.org/abs/2606.09616" target="_blank">arXiv link</a>
+        </div>
+
         <div class="card">
             <h3>Spectral Energy Distribution Modeling of Broad Emission Line Quasars: From X-ray to Radio Wavelengths</h3>
             <p><em>Avinanda Chakraborty, et. al. including Sandra Jaison</em></p>
             <p>Published in Astronomy & Astrophysics (A&A), 2024 (AA51805-24).</p>
-            <a href="https://arxiv.org/" target="_blank">arXiv link</a>
+            <a href="https://arxiv.org/abs/2411.15836" target="_blank">arXiv link</a>
         </div>
     </div>
     
     <div class="container" id="projects">
-        <h2>Recent Academic Projects</h2>
+        <h2>Academic Projects & Research Experience</h2>
+        
         <div class="card">
             <h3>Beyond Galactic Centers: Off-Nuclear AGNs in MaNGA with MEGACUBES</h3>
             <p><em>Supervisor: Dr. Rogério Riffel [UFRGS] | Aug 2025 - Present</em></p>
-            <p>Ongoing research utilizing MEGACUBES and MaNGA survey data to identify and analyze off-nuclear Active Galactic Nuclei.</p>
         </div>
+
         <div class="card">
             <h3>SED Analysis of Spectroscopically Selected and Variability Selected Dwarf AGNs</h3>
             <p><em>Supervisor: Dr. Ravi Joshi [Indian Institute of Astrophysics] | Apr 2024 - Feb 2025</em></p>
+            <p>Collected data, classified samples, and analyzed the unique features of AGNs in dwarf galaxies using the CIGALE code to improve AGN identification.</p>
+        </div>
+
+        <div class="card">
+            <h3>Processing of L1 Data Files & Photometric Analysis</h3>
+            <p><em>Supervisor: Dr. Avinanda Chakraborty [INAF - Italy] | Nov 2023 - Mar 2024</em></p>
+            <p>Processed Level 1 UVIT data from the AstroSat archive using the CCDLAB pipeline. Generated orbit-wise cleaned images, performed aperture photometry, and conducted SED modeling.</p>
+        </div>
+
+        <div class="card">
+            <h3>Spectral Energy Distribution Modeling of Active Galaxies using UVIT Data (MS Thesis)</h3>
+            <p><em>Supervisor: Dr. Suchetana Chatterjee [Presidency University] | Aug 2022 - Jul 2023</em></p>
+            <p>Constructed SEDs using the X-CIGALE code to study differences between the host galaxy properties of radio-loud and radio-quiet quasars.</p>
+        </div>
+
+        <div class="card">
+            <h3>Simulating Diffuse Foreground for Epoch of Re-ionization Observations (IIT Internship)</h3>
+            <p><em>Supervisor: Dr. Samir Choudhuri [IIT Madras] | Jul 2022 - Oct 2022</em></p>
+            <p>Simulated diffuse foreground using VisCPU and UVSim tools, comparing computational outputs.</p>
         </div>
     </div>
 
     <div class="container" id="skills">
-        <h2>Technical Skills</h2>
+        <h2>Technical & Analytical Skills</h2>
         <ul>
-            <li><strong>Programming Languages:</strong> Python</li>
-            <li><strong>Scientific Software:</strong> CIGALE, IRAF, ds9, HEASoft, CCDLAB, Xspec, LaTeX</li>
+            <li><strong>Programming & Processing:</strong> Python, LaTeX</li>
+            <li><strong>Scientific Software:</strong> CIGALE, IRAF, ds9, HEASoft, CCDLAB, Xspec</li>
+            <li><strong>Specialized Methodologies:</strong> Spectral analysis of Galaxies, reduction and analysis of raw telescope data (UVIT, SDSS, DECALS, UKIDSS), numerical simulation of diffuse foregrounds.</li>
         </ul>
     </div>
 
@@ -185,7 +225,7 @@
         <p>
             📧 <strong>Email:</strong> <a href="mailto:sandra.jaison@ufrgs.br">sandra.jaison@ufrgs.br</a><br><br>
             🔗 <strong>GitHub:</strong> <a href="https://github.com/SandraJaison77" target="_blank">github.com/SandraJaison77</a><br>
-            🔗 <strong>LinkedIn:</strong> <a href="#" target="_blank">Add Your LinkedIn Here</a>
+            🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sandra-jaison-0bb58b1b5" target="_blank">linkedin.com/in/sandra-jaison-0bb58b1b5</a>
         </p>
     </div>
 
