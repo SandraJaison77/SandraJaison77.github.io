@@ -15,9 +15,9 @@
             padding: 0;
             font-family: 'Montserrat', sans-serif;
             color: #ffffff;
-            background-color: #0c0c11; /* Fallback color just in case */
+            background-color: #0c0c11; 
             
-            /* BROKEN OUT INTO EXPLICIT PROPERTIES FOR BROWSER COMPATIBILITY */
+            /* Lower section starfield */
             background-image: linear-gradient(rgba(10, 10, 15, 0.2), rgba(10, 10, 15, 0.4)), 
                               url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2048&auto=format&fit=crop');
             background-position: center center;
@@ -36,7 +36,7 @@
             padding: 20px;
             box-sizing: border-box;
             
-            /* The top section gets your original galaxy image */
+            /* Top section galaxy */
             background-image: linear-gradient(rgba(10, 10, 15, 0.4), rgba(10, 10, 20, 0.8)), 
                               url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=2048&auto=format&fit=crop');
             background-position: center center;
@@ -99,10 +99,15 @@
             transform: translateY(5px);
         }
 
+        /* UPDATED: Added dark frosted glass backing to all content containers */
         .container {
             max-width: 850px;
-            margin: 0 auto;
-            padding: 60px 20px;
+            margin: 60px auto; /* Adds space between the boxes */
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.75); /* Deep dark background to block stars behind text */
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
         }
 
         h2 {
@@ -114,7 +119,7 @@
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.08); /* Slightly brightened to stand out against the new dark container */
             padding: 20px;
             border-radius: 8px;
             margin-bottom: 20px;
@@ -123,7 +128,7 @@
         }
 
         .card:hover {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.15);
             transform: translateX(5px);
         }
 
@@ -143,10 +148,11 @@
 
         .contact-info {
             text-align: center;
-            background: rgba(0, 0, 0, 0.2);
+            background: rgba(0, 0, 0, 0.75); /* Matches the new container darkness */
             padding: 60px 20px;
-            margin-top: 40px;
+            margin-top: 60px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
         }
 
     </style>
